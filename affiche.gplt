@@ -1,0 +1,25 @@
+#############################################
+# Auteur: Basri Mohamed			    #
+#					    #
+# Lieu: UVSQ à Versailles		    #
+# Année: 2014/2015			    #
+# Parcours: M1 INFO, Gr1		    # 
+#					    #
+# Sujet:Projet de Simulation (Supermarché)  #
+#############################################
+
+
+set term pdf
+set output "courbe.pdf"
+
+set yrange[0:3000]
+set xrange[:]
+
+set title "Temps de se sejour moyen/Debit passage en caisse"
+set xlabel "Debit passage en caisse(client/unité de temps)"
+set ylabel "Unité de temps"
+
+plot 'resultat.data'  using 1:2 w l
+
+
+
